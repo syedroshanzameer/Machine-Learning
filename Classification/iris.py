@@ -194,11 +194,4 @@ Accuracy = 73%
 
 Both the algorithms has predicted couple of labels incorrect,
 SVM is better as it has more number of accurate predictions with accuracy 73%
-
-
-data = data.replace('?', np.NaN)                          # Replace missing data with NaN
-
-imp = Imputer(missing_values='NaN', strategy='mean', axis=0)    # Fill missing values with "Mean"
-imp.fit(data)
-data_clean = imp.transform(data)
 """
